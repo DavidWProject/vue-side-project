@@ -23,7 +23,7 @@ export default {
   }),
 
   created () {
-    axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,IOT&tsyms=USD')
+    axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,LTC,ETH,ZEC,DASH,XRP,XMR,NEO,ADA,EOS,IOT&tsyms=USD')
       .then(response => {
         this.cryptos = response.data
         console.log(response)         // This will give you access to the full object
